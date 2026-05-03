@@ -1,19 +1,3 @@
-@font-face {
-  font-family: 'HelveticaCustom';
-  src: url('fonts/HelveticaNeue-Light.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaCustom';
-  src: url('fonts/HelveticaNeue-Black.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -44,21 +28,18 @@ html {
 }
 
 /* * TYPOGRAPHY */
-main {
+ain {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 120vh;
+  min-height: 100vh;
   padding: 5vw;
-  font-family: 'HelveticaCustom', "Helvetica Neue", Helvetica, system-ui, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, system-ui, sans-serif;
   font-size: clamp(1.5rem, 2vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 700;
   color: #1a1a1a;
-  
   line-height: 1.3;
-  letter-spacing: -0.06em;
-  word-spacing: -0.05em;
-  
+  letter-spacing: -0.03em;
   position: relative;
   z-index: 10;
 }
