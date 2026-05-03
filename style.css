@@ -50,7 +50,7 @@ main {
   justify-content: center;
   min-height: 100vh;
   padding: 5vw;
-  font-family: 'HelveticaCustom', Arial, sans-serif;
+  font-family: 'HelveticaCustom', "Helvetica Neue", Helvetica, sans-serif;
   font-size: clamp(1.5rem, 2vw, 2.5rem);
   font-weight: 700;
   color: #1a1a1a;
