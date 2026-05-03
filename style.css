@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'HelveticaCustom';
   src: url('fonts/HelveticaNeue-Medium.otf') format('opentype');
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -52,11 +52,11 @@ main {
   padding: 5vw;
   font-family: 'HelveticaCustom', "Helvetica Neue", Helvetica, system-ui, Arial, sans-serif;
   font-size: clamp(1.5rem, 2vw, 2.5rem);
-  font-weight: 700;
+  font-weight: 800;
   color: #1a1a1a;
   
-  line-height: 1.15;
-  letter-spacing: -0.065em;
+  line-height: 1.3;
+  letter-spacing: -0.06em;
   word-spacing: -0.03em;
   
   position: relative;
