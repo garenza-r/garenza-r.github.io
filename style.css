@@ -136,10 +136,12 @@ a:hover {
 @media (max-width: 768px) {
   main {
     padding: 8vw;
+    font-family: "Helvetica Neue", Helvetica, system-ui, Arial, sans-serif;
     font-size: 1.5rem;
   }
   .flying-random {
-    width: 120px;
-    height: 120px;
+    width: 30px;
+    height: 30px;
+    animation: zigzag 45s linear infinite alternate;
   }
 }
