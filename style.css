@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'HelveticaCustom';
+  src: url('fonts/Helvetica.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaCustom';
+  src: url('fonts/Helvetica-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,7 +50,7 @@ main {
   justify-content: center;
   min-height: 100vh;
   padding: 5vw;
-  font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'HelveticaCustom', "Helvetica Neue", Helvetica, system-ui, Arial, sans-serif;
   font-size: clamp(1.5rem, 2vw, 2.5rem);
   font-weight: 700;
   color: #1a1a1a;
