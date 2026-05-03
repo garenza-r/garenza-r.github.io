@@ -83,8 +83,8 @@ a:hover {
 /* * FLYING RANDOM EARTH IMAGE */
 .flying-random {
   position: fixed;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   animation: zigzag 45s linear infinite alternate;
   top: 0;
   left: 0;
