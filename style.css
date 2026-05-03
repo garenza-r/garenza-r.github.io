@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #fee08b;
+  color: #1a1a1a;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #3288bd;
+
+  background-image: linear-gradient(
+    180deg,
+    #d53e4f 0%,
+    #f46d43 15%,
+    #fee08b 40%,
+    #abdda4 60%,
+    #66c2a5 85%,
+    #3288bd 100%
+  );
+  background-attachment: fixed;
+}
+
+/* * TYPOGRAPHY */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 5vw;
+  font-family: "Helvetica Neue", Helvetica, system-ui, Arial, sans-serif;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  position: relative;
+  z-index: 10;
+}
+
+.content_wrapper {
+  max-width: 1000px;
+  width: 100%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 2px solid #1a1a1a4d;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+a:hover {
+  color: #1a1a1a;
+  background-color: #fee08b;
+  border-bottom-color: transparent;
+}
+
+.tools-text {
+  font-weight: 400;
+  color: #1a1a1acc;
+}
+
+.social-links {
+  margin-top: 3em;
+  font-size: 0.8em;
+}
+
+/* * FLYING RANDOM EARTH IMAGE */
+.flying-random {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  animation: zigzag 45s linear infinite alternate;
+  top: 0;
+  left: 0;
+  border-bottom: none;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.flying-random:hover {
+  background-color: transparent;
+}
+
+.earth-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: circle(41% at 50% 50%);
+  opacity: 0.9;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.earth-img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@keyframes zigzag {
+  0% {
+    transform: translate(-10vw, 5vh) rotate(0deg);
+  }
+  25% {
+    transform: translate(95vw, -10vh) rotate(90deg);
+  }
+  50% {
+    transform: translate(-5vw, 85vh) rotate(180deg);
+  }
+  75% {
+    transform: translate(90vw, 95vh) rotate(270deg);
+  }
+  100% {
+    transform: translate(50vw, -15vh) rotate(360deg);
+  }
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  main {
+    padding: 8vw;
+    font-size: 1.5rem;
+  }
+  .flying-random {
+    width: 120px;
+    height: 120px;
+  }
+}
