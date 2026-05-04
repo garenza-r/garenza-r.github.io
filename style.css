@@ -36,7 +36,7 @@ main {
   padding: 5vw;
   font-family: "Roboto Flex", system-ui, Arial, sans-serif;
   font-size: clamp(1.5rem, 2vw, 2.5rem);
-  font-weight: 600;
+  font-weight: 450;
   color: #1a1a1a;
   line-height: 1.3;
   letter-spacing: -0.03em;
@@ -73,6 +73,7 @@ a:hover {
 
 .tools-text {
   font-weight: 300;
+  font-size: 0.9em;
   color: #1a1a1acc;
 }
 
